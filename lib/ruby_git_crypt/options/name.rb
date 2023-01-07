@@ -4,13 +4,11 @@ require 'immutable-struct'
 
 module RubyGitCrypt
   module Options
-    class Name < ImmutableStruct.new(:name)
+    class Name < ImmutableStruct.new(:name, :prefix)
+      attr_reader :name
+
       def initialize(name)
         super(name: name.to_s)
-      end
-
-      def name
-        "--#{without_prefix}"
       end
 
       alias to_s name

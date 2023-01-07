@@ -4,25 +4,23 @@ require_relative 'base'
 
 module RubyGitCrypt
   module Commands
-    class Status < Base
+    class ExportKey < Base
       # @!visibility private
       def subcommands
-        %w[status]
+        %w[export-key]
       end
 
       # @!visibility private
       def options
         super +
           %w[
-            -e
-            -u
-            --fix
+            --key-name
           ]
       end
 
       # @!visibility private
       def arguments(parameters)
-        [parameters[:files]]
+        [parameters[:filename]]
       end
     end
   end

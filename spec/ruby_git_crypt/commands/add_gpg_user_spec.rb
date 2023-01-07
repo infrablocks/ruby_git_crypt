@@ -2,8 +2,8 @@
 
 require 'spec_helper'
 
-describe RubyGitCrypt::Commands::Status do
-  subcommand = 'status'
+describe RubyGitCrypt::Commands::AddGPGUser do
+  subcommand = 'add-gpg-user'
 
   before do
     RubyGitCrypt.configure do |config|
@@ -21,22 +21,22 @@ describe RubyGitCrypt::Commands::Status do
   )
 
   it_behaves_like(
-    'a command with a flag',
-    described_class, subcommand, :encrypted_only, flag: '-e'
+    'a command with an option',
+    described_class, subcommand, :key_name
   )
 
   it_behaves_like(
     'a command with a flag',
-    described_class, subcommand, :unencrypted_only, flag: '-u'
+    described_class, subcommand, :no_commit
   )
 
   it_behaves_like(
     'a command with a flag',
-    described_class, subcommand, :fix
+    described_class, subcommand, :trusted
   )
 
   it_behaves_like(
-    'a command with an argument array',
-    described_class, subcommand, :files
+    'a command with an argument',
+    described_class, subcommand, :gpg_user_id
   )
 end

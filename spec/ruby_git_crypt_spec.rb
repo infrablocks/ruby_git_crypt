@@ -8,7 +8,12 @@ end
 
 describe RubyGitCrypt do
   commands = {
-    status: RubyGitCrypt::Commands::Status
+    add_gpg_user: RubyGitCrypt::Commands::AddGPGUser,
+    export_key: RubyGitCrypt::Commands::ExportKey,
+    init: RubyGitCrypt::Commands::Init,
+    lock: RubyGitCrypt::Commands::Lock,
+    status: RubyGitCrypt::Commands::Status,
+    unlock: RubyGitCrypt::Commands::Unlock
   }
 
   it 'has a version number' do

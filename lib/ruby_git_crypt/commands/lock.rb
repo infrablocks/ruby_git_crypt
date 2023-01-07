@@ -4,25 +4,20 @@ require_relative 'base'
 
 module RubyGitCrypt
   module Commands
-    class Status < Base
+    class Lock < Base
       # @!visibility private
       def subcommands
-        %w[status]
+        %w[lock]
       end
 
       # @!visibility private
       def options
         super +
           %w[
-            -e
-            -u
-            --fix
+            --all
+            --force
+            --key-name
           ]
-      end
-
-      # @!visibility private
-      def arguments(parameters)
-        [parameters[:files]]
       end
     end
   end

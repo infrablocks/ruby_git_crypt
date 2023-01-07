@@ -4,25 +4,25 @@ require_relative 'base'
 
 module RubyGitCrypt
   module Commands
-    class Status < Base
+    class AddGPGUser < Base
       # @!visibility private
       def subcommands
-        %w[status]
+        %w[add-gpg-user]
       end
 
       # @!visibility private
       def options
         super +
           %w[
-            -e
-            -u
-            --fix
+            --key-name
+            --no-commit
+            --trusted
           ]
       end
 
       # @!visibility private
       def arguments(parameters)
-        [parameters[:files]]
+        [parameters[:gpg_user_id]]
       end
     end
   end

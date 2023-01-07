@@ -21,8 +21,33 @@ module RubyGitCrypt
   end
 
   module ClassMethods
+    def add_gpg_user(parameters = {}, invocation_options = {})
+      exec(RubyGitCrypt::Commands::AddGPGUser,
+           parameters, invocation_options)
+    end
+
+    def export_key(parameters = {}, invocation_options = {})
+      exec(RubyGitCrypt::Commands::ExportKey,
+           parameters, invocation_options)
+    end
+
+    def init(parameters = {}, invocation_options = {})
+      exec(RubyGitCrypt::Commands::Init,
+           parameters, invocation_options)
+    end
+
+    def lock(parameters = {}, invocation_options = {})
+      exec(RubyGitCrypt::Commands::Lock,
+           parameters, invocation_options)
+    end
+
     def status(parameters = {}, invocation_options = {})
       exec(RubyGitCrypt::Commands::Status,
+           parameters, invocation_options)
+    end
+
+    def unlock(parameters = {}, invocation_options = {})
+      exec(RubyGitCrypt::Commands::Unlock,
            parameters, invocation_options)
     end
 
