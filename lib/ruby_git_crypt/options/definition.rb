@@ -2,9 +2,9 @@
 
 require 'immutable-struct'
 
-require_relative './name'
-require_relative './types'
-require_relative './values'
+require_relative 'name'
+require_relative 'types'
+require_relative 'values'
 
 module RubyGitCrypt
   module Options
