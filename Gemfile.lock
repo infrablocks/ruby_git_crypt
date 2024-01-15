@@ -32,7 +32,7 @@ GEM
     drb (2.1.1)
       ruby2_keywords
     excon (0.104.0)
-    faker (3.2.2)
+    faker (3.2.3)
       i18n (>= 1.8.11, < 2)
     faraday (2.7.11)
       base64
@@ -189,12 +189,6 @@ GEM
     yard (0.9.34)
 
 PLATFORMS
-  arm64-darwin-21
-  arm64-darwin-22
-  ruby
-  x86_64-darwin-19
-  x86_64-darwin-20
-  x86_64-darwin-21
   x86_64-linux
 
 DEPENDENCIES
