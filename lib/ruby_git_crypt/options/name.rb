@@ -18,7 +18,7 @@ module RubyGitCrypt
       end
 
       def as_plural_key
-        "#{snake_case}s".to_sym
+        :"#{snake_case}s"
       end
 
       private

@@ -81,7 +81,7 @@ module RubyGitCrypt
       @binary = 'git-crypt'
       @logger = default_logger
       @options = default_options
-      @stdin = ''
+      @stdin = nil
       @stdout = $stdout
       @stderr = $stderr
     end
