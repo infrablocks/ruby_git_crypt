@@ -3,7 +3,7 @@ PATH
   specs:
     ruby_git_crypt (0.1.0.pre.7)
       immutable-struct (~> 2.4)
-      lino (~> 4.0)
+      lino (>= 3.1)
 
 GEM
   remote: https://rubygems.org/
