@@ -40,7 +40,6 @@ GEM
     faraday-net_http (3.1.0)
       net-http
     ffi (1.17.0)
-    ffi (1.17.0-arm64-darwin)
     formatador (1.1.0)
     gem-release (2.2.2)
     git (1.19.1)
@@ -191,8 +190,13 @@ GEM
     yard (0.9.36)
 
 PLATFORMS
+  arm64-darwin-21
   arm64-darwin-22
   ruby
+  x86_64-darwin-19
+  x86_64-darwin-20
+  x86_64-darwin-21
+  x86_64-linux
 
 DEPENDENCIES
   bundler
