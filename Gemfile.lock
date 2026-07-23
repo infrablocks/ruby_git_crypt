@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    ruby_git_crypt (0.2.0.pre.2)
+    ruby_git_crypt (0.2.0.pre.3)
       immutable-struct (~> 2.4)
       lino (>= 4.1)
 
@@ -45,7 +45,6 @@ GEM
     faraday-net_http (3.4.4)
       net-http (~> 0.5)
     ffi (1.17.1)
-    ffi (1.17.1-arm64-darwin)
     ffi (1.17.1-x86_64-linux-gnu)
     formatador (1.1.0)
     gem-release (2.2.4)
